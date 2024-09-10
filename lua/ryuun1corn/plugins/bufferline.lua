@@ -8,14 +8,11 @@ return {
     local bufferline = require("bufferline")
 
     bufferline.setup({
-      highlights = require("catppuccin.groups.integrations.bufferline").get()
+      options = {
+        mode = "tabs",
+      },
+      highlights = require("catppuccin.groups.integrations.bufferline").get(),     
     })
   end,
   version = "*",
-  opts = {
-    options = {
-      mode = "tabs",
-      separator_style = "slant"
-    }
-  }
 }
