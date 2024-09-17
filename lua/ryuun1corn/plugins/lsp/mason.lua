@@ -36,6 +36,7 @@ return {
 				"pyright",
 				"bashls",
 				"ast_grep",
+				"jinja_lsp",
 			},
 		})
 
@@ -45,8 +46,8 @@ return {
 				"stylua", -- lua formatter
 				"isort", -- python formatter
 				"black", -- python formatter
-				"pylint",
-				"eslint_d",
+				"pylint", -- python linter
+				"eslint_d", -- ES linter
 			},
 		})
 	end,
