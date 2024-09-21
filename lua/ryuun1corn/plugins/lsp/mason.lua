@@ -32,6 +32,7 @@ return {
 				"tailwindcss",
 				"lua_ls",
 				"emmet_ls",
+				"jdtls",
 				"prismals",
 				"pyright",
 				"bashls",
@@ -48,6 +49,7 @@ return {
 				"black", -- python formatter
 				"pylint", -- python linter
 				"eslint_d", -- ES linter
+				"google-java-format",
 			},
 		})
 	end,
