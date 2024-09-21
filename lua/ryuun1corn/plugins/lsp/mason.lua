@@ -36,7 +36,7 @@ return {
 				"prismals",
 				"pyright",
 				"bashls",
-				"ast_grep",
+				"clangd",
 				"jinja_lsp",
 			},
 		})
