@@ -50,6 +50,7 @@ return {
 				"pylint", -- python linter
 				"eslint_d", -- ES linter
 				"google-java-format",
+				"djlint",
 			},
 		})
 	end,
