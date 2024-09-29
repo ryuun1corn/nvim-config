@@ -15,10 +15,7 @@ return {
 			},
 			-- enable indentation
 			indent = { enable = true },
-			-- enable autotagging (w /nvim-ts-autotag plugin)
-			autotag = {
-				enable = true,
-			},
+
 			-- ensure these language parsers are installed
 			ensure_installed = {
 				"bash",
@@ -29,6 +26,7 @@ return {
 				"dockerfile",
 				"gitignore",
 				"html",
+				"htmldjango",
 				"java",
 				"javascript",
 				"json",

@@ -69,6 +69,7 @@ return {
 
 		-- used to enable autocompletion (assign to every lsp server config)
 		local capabilities = cmp_nvim_lsp.default_capabilities()
+		capabilities.textDocument.completion.completionItem.snippetSupport = true
 
 		-- Change the Diagnostic symbols in the sign column (gutter)
 		-- (not in youtube nvim video)
@@ -92,6 +93,7 @@ return {
 					capabilities = capabilities,
 					filetypes = {
 						"html",
+						"htmldjango",
 						"typescriptreact",
 						"javascriptreact",
 						"css",
@@ -99,6 +101,14 @@ return {
 						"scss",
 						"less",
 						"svelte",
+					},
+					init_options = {
+						html = {
+							options = {
+								-- For possible options, see: https://github.com/emmetio/emmet/blob/master/src/config.ts#L79-L267
+								["bem.enabled"] = true,
+							},
+						},
 					},
 				})
 			end,
