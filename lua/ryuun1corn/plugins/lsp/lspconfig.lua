@@ -134,7 +134,11 @@ return {
 			["jinja_lsp"] = function()
 				lspconfig["jinja_lsp"].setup({
 					capabilities = capabilities,
-					filetypes = { "html", "htmldjango" },
+					cmd = { "jinja-lsp" },
+					filetypes = { "htmldjango" },
+					root_dir = function(fname)
+						return lspconfig.util.find_git_ancestor(fname)
+					end,
 					settings = {
 						jinja = {
 							env = {
@@ -146,6 +150,13 @@ return {
 							lstrip_blocks = true,
 						},
 					},
+				})
+			end,
+
+			["html"] = function()
+				lspconfig["html"].setup({
+					capabilities = capabilities,
+					filetypes = { "html", "htmldjango" },
 				})
 			end,
 		})
