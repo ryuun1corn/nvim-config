@@ -38,7 +38,6 @@ return {
 				"pyright",
 				"bashls",
 				"clangd",
-				"jinja_lsp",
 			},
 		})
 

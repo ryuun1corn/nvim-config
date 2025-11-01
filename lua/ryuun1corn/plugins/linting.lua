@@ -9,7 +9,6 @@ return {
 			typescript = { "eslint_d" },
 			javascriptreact = { "eslint_d" },
 			typescriptreact = { "eslint_d" },
-			python = { "pylint" },
 		}
 
 		local eslint = lint.linters.eslint_d
